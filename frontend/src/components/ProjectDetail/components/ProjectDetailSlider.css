@@ -1,0 +1,21 @@
+.project-slider-container img {
+    max-height: 68vh;
+    max-width: 89vw;
+    width: auto;
+}
+
+.splide__video {
+    background: none;
+}
+
+.splide__slide--has-video img {
+    opacity: 0;
+}
+
+@media screen and (max-width: 575.98px) {
+    .project-slider-container img {
+        max-height: 67vw;
+        max-width: 89vw;
+        width: auto;
+    }
+}

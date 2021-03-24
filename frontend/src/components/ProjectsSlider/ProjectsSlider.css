@@ -1,0 +1,123 @@
+#projects-slider-flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 91vh;
+}
+
+.projects-slider-container {
+  width: 100%;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#buttons-top-container {
+  width: 100%;
+  height: 24.75vh;
+}
+
+#slider-button-top-right, #slider-button-top-left{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+#buttons-bottom-container {
+  width: 100%;
+  /* height: 10vh; */
+  flex-grow: 1;
+}
+
+#slider-button-bottom-right, #slider-button-bottom-left {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+#slider-button-top-right, #slider-button-bottom-right {
+  cursor: url('../../assets/cursors/arrow-right.png') 54 23, pointer;
+}
+
+#slider-button-top-left, #slider-button-bottom-left {
+  cursor: url('../../assets/cursors/arrow-left.png') 54 23, pointer;
+}
+
+.projects-slider-card-container {
+  cursor: url('../../assets/cursors/link-hover.png') 30 28, pointer;
+}
+
+.projects-slider-card-image-container {
+  height: 48.75vh;
+  max-width: 48.75vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.projects-slider-card-image-container img { 
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  transition: 0.3s ease-out;
+}
+
+.projects-slider-card-text-container {
+  max-width: 36.5vh;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 1.5vh;
+}
+
+.projects-slider-card-text-container p {
+  padding: 0;
+}
+
+.projects-slider-client-name {
+  font-family: "Clifton", Helvetica, serif;
+  font-size: 2.25vh;
+}
+
+.projects-slider-card-description {
+  font-size: 3.5vh;
+  font-weight: 100;
+  margin-top: 1vh;
+  width: 90%;
+}
+
+.splide__slide a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 575.98px) {
+  #buttons-top-container, #buttons-bottom-container {
+    display: none;
+  }
+
+  .projects-slider-card-image-container {
+    height: 70vw;
+    max-width: 70vw;
+  }
+
+  .projects-slider-card-text-container {
+    max-width: 52vw;
+  }
+
+  #projects-slider-flex-container {
+    height: initial;
+    margin-top: 31.25vh;
+  }
+
+  .projects-slider-client-name {
+  font-family: "Clifton", Helvetica, serif;
+  font-size: 2.25vh;
+  }
+
+  .projects-slider-card-description {
+  font-size: 3vh;
+  font-weight: 100;
+  margin-top: 1vh;
+  width: 90%;
+  }
+
+}

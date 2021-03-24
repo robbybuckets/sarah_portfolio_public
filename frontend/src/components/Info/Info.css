@@ -1,0 +1,130 @@
+.info-page-flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 94.7vh;
+}
+
+.info-container {
+    font-weight: lighter;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 4;
+}
+
+#bio-container {
+    font-size: 3.5vh;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#bio {
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: 1vw;
+    margin-bottom: 6.5vh;
+}
+
+#bio p {
+    margin-bottom: 3.5vh;
+}
+
+#info-lists {
+    width: 50%;
+    display: inline-block;
+}
+
+#info-lists-flex-container {
+    display: flex;
+    justify-content: center;
+    padding-right: 4vw;
+}
+
+#info-lists p {
+    font-size: 3.5vh;
+}
+
+#selected-clients, #contact {
+    display: inline-block;
+    padding-right: 4vmin;
+    vertical-align: top;
+}
+
+#info-lists ul {
+    padding: 0;
+    margin-top: .75vh;
+}
+
+#info-lists li {
+    list-style-type: none;
+    font-family: "Clifton", Helvetica, serif;
+    font-size: 2.2vh;
+    padding-bottom: .5vh;
+    margin: 0;
+}
+
+#info-copyright {
+    font-size: 3.5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-grow: 1;
+    float: right;
+    padding-bottom: .8vh;
+    margin-right: 1vw;
+  }
+
+@media screen and (max-width: 575.98px) {
+    .info-container {
+        font-weight: lighter;
+        width: 100%;
+        margin-top: 18vw;
+    }
+
+    #bio-container {
+        font-size: 6.66vw;
+        width: auto;
+        display: block;
+        margin-left: 2.9vw;
+        margin-right: 2.9vw;
+        box-sizing: border-box;
+    }
+
+    #bio {
+        width: initial;
+        box-sizing: initial;
+        margin-left: initial;
+    }
+    
+    #bio p {
+        margin-bottom: 3.5vh;
+    }
+
+    #info-lists-flex-container {
+        margin-left: 2.9vw;
+        margin-right: 2.9vw;
+        display: block;
+        justify-content: initial;
+        padding-right: initial;
+    }
+
+    #selected-clients, #contact {
+        display: initial;
+        padding-right: initial;
+    }
+
+    #info-lists {
+        width: initial;
+        display: block;
+    }
+
+    #info-lists p {
+        font-size: 6.66vw;
+    }
+
+    #info-copyright {
+        font-size: 6.66vw;
+    }
+}

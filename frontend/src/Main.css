@@ -1,0 +1,122 @@
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f4eb;
+  font-family: 'Sneak', Helvetica, sans-serif;
+  cursor: url('./assets/cursors/cursor.png') 8 8, auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: url('./assets/cursors/link-hover.png') 30 28, pointer;
+}
+
+p {
+  margin: 0;
+}
+
+#loading {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading img {
+  max-width: 17vw;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.navbar {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: .8vh;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.navbar h1 {
+  margin: 0px;
+  font-size: 4.5vh;
+  font-weight: 100;
+  text-decoration: none;
+  cursor: url('./assets/cursors/link-hover.png') 30 28, pointer;
+}
+
+#logo {
+  height: 4.5vh;
+  width: 400px;
+  background-image: url('./assets/images/sarahryder-desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: url('./assets/cursors/link-hover.png') 30 28, pointer;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* React Transition */
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms linear 250ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 575.98px) {
+  .navbar {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 1.5vh;
+  }
+
+  .navbar h1 {
+    font-size: 6.66vw;
+  }
+
+  #logo {
+    height: 12.25vw;
+    width: 100px;
+    background-image: url('./assets/images/sarahryder-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('./assets/cursors/link-hover.png') 30 28, pointer;
+  }
+}
